@@ -25,7 +25,7 @@ void main() {
 	cv::resize(img, imgResize, cv::Size(), 0.5, 0.5);
 	cv::imshow("imgResize", imgResize);
 
-	// crop图片 cv::Rect roi(x1, y1, x2, y2);
+	// crop图片 cv::Rect roi(x1, y1, w, h);
 	cv::Rect roi(100, 100, 500, 200);
 	cv::Mat imgCrop;
 	// 直接给img里面传一个Rect矩阵，表示剪裁的区域即可，剪裁只管xy坐标，不管通道数
